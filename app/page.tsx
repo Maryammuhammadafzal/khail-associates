@@ -15,6 +15,8 @@ export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white dark:bg-black sm:items-start">
+
+        {/* Hero Section */}
         <section className="hero-section relative w-full h-screen flex justify-center items-center">
           {/* grid line */}
           {/* <div className="bg-black/10 w-full h-screen flex pl-52 justify-between ">
@@ -54,7 +56,7 @@ export default function Home() {
               <div onClick={() => setTheme(false)} className="theme items-center pl-20 w-auto h-auto  flex gap-6">
                 {theme === true ? (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><MoonIcon size={20} /> Dark Mode</span>) : (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><SunDimIcon size={20} /> Light Mode</span>)}
                 <div className="menu-icon text-white ">
-                  <TbMenu3 size={34}  onClick={() => setOpenMenu(true)} />
+                  <TbMenu3 size={34} onClick={() => setOpenMenu(true)} />
                 </div>
               </div>
             </div>
@@ -106,6 +108,7 @@ export default function Home() {
             </div>
           </div>
 
+          {/* hero content */}
           <div className="hero-content absolute top-50 left-50  w-auto min-w-[50%] min-h-[50%] h-fit flex justify-center items-center">
             <div className="w-auto h-auto flex flex-col gap-4">
               <div className="sub-heading flex gap-2 items-center">
@@ -119,9 +122,10 @@ export default function Home() {
                 Full-service Architecture Studio
               </h1>
               <p className="text-white text-xl max-w-lg">Archdeco Studio has implemented more than 600 projects in 25 countries.</p>
-            <button className="text-black bg-white border border-white/30 w-fit px-10 py-3 mt-3 font-semibold  uppercase rounded-4xl flex gap-3">Contact Us <ArrowUpRight/></button>
+              <button className="text-black bg-white border border-white/30 w-fit px-10 py-3 mt-3 font-semibold  uppercase rounded-4xl flex gap-3">Contact Us <ArrowUpRight /></button>
             </div>
           </div>
+
         </section>
       </main>
     </div>
