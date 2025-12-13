@@ -3,9 +3,9 @@ import { Button } from './ui/button'
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
 
-const AboutSection = () => {
+const ProcessSection = () => {
     return (
-        <section className="about-section bg-neutral-900 relative w-full h-auto min-h-screen flex flex-col justify-center items-center">
+        <section className="about-section bg-neutral-900 relative w-full h-auto min-h-screen flex  justify-center items-center">
             <div className="about-bg relative w-full h-screen flex justify-center items-center">
 
                 <div className="w-auto h-screen flex flex-col gap-12 text-center justify-center items-center">
@@ -30,4 +30,4 @@ const AboutSection = () => {
     )
 }
 
-export default AboutSection
+export default ProcessSection

@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Button } from './ui/button'
 import { ArrowUpRight } from 'lucide-react'
+import { ProjectCarousel } from './project-carousel'
 
 const ProjectSection = () => {
     return (
@@ -13,10 +14,10 @@ const ProjectSection = () => {
                         Recent Works
                     </h2>
                 </div>
-                <div className='about-bg rotate-180 relative w-full h-auto flex justify-center items-center'>
-                  
+                <div className='relative w-full h-auto flex justify-center items-center p-3 overflow-hidden'>
+                  <ProjectCarousel />
                 </div>
-                <Button data-aos="fade-up" className="bg-neutral-700 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>
+                <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>
             </div>
         </section>
     )
