@@ -11,6 +11,7 @@ import { TbMenu3 } from "react-icons/tb";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import FeaturesSection from "@/components/features-section";
+import ProjectSection from "@/components/project-section";
 
 export default function Home() {
   const [theme, setTheme] = useState(true);
@@ -87,7 +88,7 @@ export default function Home() {
           </div>
 
           {/* Sidebar */}
-          <div className={`fixed top-0 left-0 h-screen w-[60%] bg-neutral-800 text-white z-50 
+          <div className={`fixed top-0 left-0 h-screen w-[60%] bg-neutral-900 text-white z-50 
         transform transition-transform duration-500 
         ${openMenu ? "translate-x-0" : "-translate-x-full"}`}
           >
@@ -145,7 +146,7 @@ export default function Home() {
                 Full-service Architecture Studio
               </h1>
               <p data-aos="fade-right" className="text-white text-xl max-w-lg">Archdeco Studio has implemented more than 600 projects in 25 countries.</p>
-              <Button data-aos="fade-right" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>
+              <Button data-aos="fade-right" className="bg-neutral-700 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>
             </div>
           </div>
 
@@ -153,6 +154,7 @@ export default function Home() {
 
         <AboutSection />
         <FeaturesSection />
+        <ProjectSection />
       </main>
     </div>
   );

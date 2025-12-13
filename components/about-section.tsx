@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const AboutSection = () => {
     return (
-        <section className="about-section bg-black relative w-full h-auto min-h-screen flex flex-col justify-center items-center">
+        <section className="about-section bg-neutral-900 relative w-full h-auto min-h-screen flex flex-col justify-center items-center">
             <div className="about-bg relative w-full h-screen flex justify-center items-center">
 
                 <div className="w-auto h-screen flex flex-col gap-12 text-center justify-center items-center">
@@ -20,7 +20,7 @@ const AboutSection = () => {
                        We Explore Environments That Integrate Beauty & Function.
                     </h1>
                     <p data-aos="fade-up" className="text-white text-lg max-w-3xl">We understand every detail that goes into crafting a beautiful space. We use our experience and specialist skills to keep things running smoothly, on budget and on time.</p>
-                    <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>
+                    <Button data-aos="fade-up" className="bg-neutral-700 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>
                 </div>
             </div>
             <div className='about-bg rotate-180 relative w-full h-screen flex justify-center items-center'>

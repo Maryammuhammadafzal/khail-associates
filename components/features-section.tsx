@@ -26,7 +26,7 @@ const FeaturesSection = () => {
         },
     ];
     return (
-        <section className="about-section dark:bg-black relative w-full h-auto min-h-screen flex flex-col justify-center items-center">
+        <section className="about-section dark:bg-neutral-900 relative w-full h-auto min-h-screen flex flex-col justify-center items-center">
             <div className='grid lg:grid-cols-3 grid-cols-1'>
                 {features_data.map((feature) => (
                     <div key={feature.title} data-aos='fade-up' className=' h-auto w-auto pr-16 pl-10 flex flex-col gap-6 border-l dark:border-neutral-300/30 border-neutral-400/50'>

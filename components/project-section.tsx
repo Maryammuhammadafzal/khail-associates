@@ -1,0 +1,25 @@
+import Image from 'next/image'
+import React from 'react'
+import { Button } from './ui/button'
+import { ArrowUpRight } from 'lucide-react'
+
+const ProjectSection = () => {
+    return (
+        <section className="about-section bg-neutral-900 relative w-full h-auto min-h-screen flex flex-col justify-center ">
+            <div className="relative w-full h-screen flex p-8 flex-col justify-center gap-10">
+
+                <div className="w-auto h-fit flex flex-col gap-12 text-center justify-center ">
+                    <h2 data-aos="zoom-in-right" className="text-white font-medium text-9xl uppercase letter-spacing max-w-6xl">
+                        Recent Works
+                    </h2>
+                </div>
+                <div className='about-bg rotate-180 relative w-full h-auto flex justify-center items-center'>
+                  
+                </div>
+                <Button data-aos="fade-up" className="bg-neutral-700 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>
+            </div>
+        </section>
+    )
+}
+
+export default ProjectSection
