@@ -1,5 +1,7 @@
 'use client'
 
+import AboutSection from "@/components/about-section";
+import { Button } from "@/components/ui/button";
 import { ArrowRightCircle, ArrowUpRight, ArrowUpRightFromCircle, Facebook, FacebookIcon, MenuIcon, MoonIcon, SunDimIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -63,8 +65,7 @@ export default function Home() {
           </div>
 
           {/* Sidebar */}
-          <div
-            className={`fixed top-0 left-0 h-screen w-[60%] bg-black text-white z-50 
+          <div className={`fixed top-0 left-0 h-screen w-[60%] bg-neutral-800 text-white z-50 
         transform transition-transform duration-500 
         ${openMenu ? "translate-x-0" : "-translate-x-full"}`}
           >
@@ -122,11 +123,13 @@ export default function Home() {
                 Full-service Architecture Studio
               </h1>
               <p className="text-white text-xl max-w-lg">Archdeco Studio has implemented more than 600 projects in 25 countries.</p>
-              <button className="text-black bg-white border border-white/30 w-fit px-10 py-3 mt-3 font-semibold  uppercase rounded-4xl flex gap-3">Contact Us <ArrowUpRight /></button>
+            <Button className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>     
             </div>
           </div>
 
         </section>
+        
+        <AboutSection/>
       </main>
     </div>
   );

@@ -127,6 +127,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.about-bg {
+  background-image: url('/images/about-bg.webp');
+  background-position: right;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 
 .letter-spacing {
   letter-spacing: 1.5px;
