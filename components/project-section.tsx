@@ -9,7 +9,7 @@ const ProjectSection = () => {
         <section className="about-section bg-neutral-900 relative w-full h-auto min-h-screen flex flex-col justify-center ">
             <div className="relative w-full h-screen flex p-8 flex-col justify-center gap-10">
 
-                <div className="w-auto h-fit flex flex-col gap-12 text-center justify-center ">
+                <div className="w-auto h-fit flex flex-col gap-12 justify-center ">
                     <h2 data-aos="zoom-in-right" className="text-white font-medium text-9xl uppercase letter-spacing max-w-6xl">
                         Recent Works
                     </h2>
@@ -17,7 +17,7 @@ const ProjectSection = () => {
                 <div className='relative w-full h-auto flex justify-center items-center p-3 overflow-hidden'>
                   <ProjectCarousel />
                 </div>
-                <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>
+                {/* <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button> */}
             </div>
         </section>
     )

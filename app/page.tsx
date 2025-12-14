@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import FeaturesSection from "@/components/features-section";
 import ProjectSection from "@/components/project-section";
+import ProcessSection from "@/components/process-section";
 
 export default function Home() {
   const [theme, setTheme] = useState(true);
@@ -155,6 +156,7 @@ export default function Home() {
         <AboutSection />
         <FeaturesSection />
         <ProjectSection />
+        <ProcessSection />
       </main>
     </div>
   );
