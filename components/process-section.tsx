@@ -6,6 +6,8 @@ import Image from 'next/image'
 const ProcessSection = () => {
     return (
         <section className="process-section dark:bg-neutral-900 relative px-8 py-24  w-full h-auto min-h-screen flex  justify-center items-center">
+           
+
             <div className="relative w-[40%] h-screen px-12 flex flex-col py-14 border-l dark:border-neutral-300/30 border-neutral-400/50 justify-between ">
 
                 <div className="w-auto h-screen flex flex-col gap-12">

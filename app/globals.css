@@ -133,6 +133,12 @@
   background-size: auto;
   background-repeat: no-repeat;
 }
+.awards-bg {
+  background-image: url('/images/awards-bg.webp');
+  background-position: right;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
 
 
 .letter-spacing {

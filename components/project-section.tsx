@@ -6,8 +6,15 @@ import { ProjectCarousel } from './project-carousel'
 
 const ProjectSection = () => {
     return (
-        <section className="about-section bg-neutral-900 relative w-full h-auto min-h-screen flex flex-col justify-center ">
-            <div className="relative w-full h-screen flex p-8 flex-col justify-center gap-10">
+        <section className="about-section bg-neutral-800 relative w-full h-auto min-h-screen flex flex-col justify-center ">
+           {/* grid line */}
+          <div className="bg-black/10 w-full h-screen absolute top-0 left-0 flex pl-52 justify-between ">
+            <div className="column-1 border-l-[1px] border-white/30 w-[25%] h-screen"></div>
+            <div className="column-1 border-l-[1px] border-white/30 w-[25%] h-screen"></div>
+            <div className="column-1 border-l-[1px] border-white/30 w-[25%] h-screen"></div>
+            <div className="column-1 border-l-[1px] border-white/30 w-[25%] h-screen"></div>
+          </div>
+            <div className="relative w-full h-screen flex p-8 my-24 flex-col justify-center gap-16">
 
                 <div className="w-auto h-fit flex flex-col gap-12 justify-center ">
                     <h2 data-aos="zoom-in-right" className="text-white font-medium text-9xl uppercase letter-spacing max-w-6xl">
