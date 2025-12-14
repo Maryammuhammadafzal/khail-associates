@@ -5,10 +5,10 @@ import { TestimonialCarousel } from './testimonial-carousel'
 
 const TestimonialSection = () => {
   return (
-    <section className="philosophy-section bg-[#d4af375b] relative px-8 w-full h-auto min-h-screen flex justify-center items-center">
+    <section className="philosophy-section dark:bg-black relative px-8 w-full h-auto min-h-screen flex justify-center items-center">
 
 
-            <div className="relative w-[40%] h-screen px-12 flex flex-col py-14 justify-between ">
+            <div className="relative w-[35%] h-screen px-12 flex flex-col py-14 justify-center ">
 
                 <div className="w-auto h-screen flex flex-col gap-12">
                     <div data-aos="fade-up" className="sub-heading flex gap-2 items-center">
@@ -24,7 +24,7 @@ const TestimonialSection = () => {
                 </div>
                 <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More<ArrowUpRight size={16} /></Button>
             </div>
-            <div className='relative w-[60%]  border-l dark:border-neutral-300/30 border-neutral-400/50 h-screen flex justify-center items-center'>
+            <div className='relative w-[65%]  py-24 h-auto flex justify-center items-center'>
                 <TestimonialCarousel />
             </div>
         </section>
