@@ -14,6 +14,7 @@ import FeaturesSection from "@/components/features-section";
 import ProjectSection from "@/components/project-section";
 import ProcessSection from "@/components/process-section";
 import AwardsSection from "@/components/awards-section";
+import PhilosophySection from "@/components/philosophy-section";
 
 export default function Home() {
   const [theme, setTheme] = useState(true);
@@ -159,6 +160,7 @@ export default function Home() {
         <ProjectSection />
         <ProcessSection />
         <AwardsSection />
+        <PhilosophySection />
       </main>
     </div>
   );

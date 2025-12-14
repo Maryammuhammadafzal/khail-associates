@@ -7,18 +7,18 @@ import {
 
 export default function ImageComparison() {
   return (
-    <div className="w-full max-w-5xl mx-auto">
-      <ReactCompareSlider
+    <div className="w-full max-w-4xl p-8 mx-auto">
+      <ReactCompareSlider className=''
         itemOne={
           <ReactCompareSliderImage
-            src="/images/before.jpg"
+            src="/images/comparison-before.webp"
             alt="Under Construction"
           />
         }
         itemTwo={
           <ReactCompareSliderImage
-            src="/images/after.jpg"
-            alt="Completed Building"
+            src="/images/comparison-after.webp"
+            alt="Completed Building"      
           />
         }
       />
