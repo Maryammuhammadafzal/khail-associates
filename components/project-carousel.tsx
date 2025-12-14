@@ -14,37 +14,37 @@ export function ProjectCarousel() {
 
     const projects_data = [
         {
-            image : '/images/Project-image-1.jpeg',
+            image : '/images/Project-image-1-min.jpeg',
             title : 'Architect By Yousuf',
             nickname : 'Architecture'
         },
         {
-            image : '/images/Project-image-2.jpeg',
+            image : '/images/Project-image-2-min.jpeg',
             title : 'Architect By Yousuf',
             nickname : 'Architecture'
         },
         {
-            image : '/images/Project-image-3.jpeg',
+            image : '/images/Project-image-3-min.jpeg',
             title : 'Architect By Yousuf',
             nickname : 'Architecture'
         },
         {
-            image : '/images/Project-image-4.jpeg',
+            image : '/images/Project-image-4-min.jpeg',
             title : 'Architect By Yousuf',
             nickname : 'Architecture'
         },
         {
-            image : '/images/Project-image-5.jpeg',
+            image : '/images/Project-image-5-min.jpeg',
             title : 'Architect By Yousuf',
             nickname : 'Architecture'
         },
         {
-            image : '/images/Project-image-6.jpeg',
+            image : '/images/Project-image-6-min.jpeg',
             title : 'Architect By Yousuf',
             nickname : 'Architecture'
         },
         {
-            image : '/images/Project-image-7.jpeg',
+            image : '/images/Project-image-7-min.jpeg',
             title : 'Architect By Yousuf',
             nickname : 'Architecture'
         },
@@ -64,7 +64,7 @@ export function ProjectCarousel() {
                             <Card className="p-3 border-none shadow-none bg-transparent">
                                 <CardContent className="flex flex-col gap-6 p-2">
                                     <div className="w-full h-[500px]">
-                                    {/* <Image src={project.image} alt="image" width={400} height={500} className="w-full h-full object-cover object-center" /> */}
+                                    <Image src={project.image} alt="image" width={400} height={500} className="w-full h-full object-cover object-center" />
                                     </div>
                                     <div className="flex flex-col gap-2 text-white">
                                         <h2 className="text-2xl font-medium">{project.title}</h2>

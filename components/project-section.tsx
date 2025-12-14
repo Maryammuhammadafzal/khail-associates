@@ -8,7 +8,7 @@ const ProjectSection = () => {
     return (
         <section className="about-section bg-neutral-800 relative w-full h-auto min-h-screen flex flex-col justify-center ">
            {/* grid line */}
-          <div className=" w-full min-h-screen h-auto absolute top-0 left-0 flex pl-52 justify-between ">
+          <div className=" w-full min-h-screen h-full absolute top-0 left-0 flex pl-52 justify-between ">
             <div className="column-1 border-l-[1px] border-white/30 w-[25%] min-h-screen h-full"></div>
             <div className="column-1 border-l-[1px] border-white/30 w-[25%] min-h-screen h-full"></div>
             <div className="column-1 border-l-[1px] border-white/30 w-[25%] min-h-screen h-full"></div>
