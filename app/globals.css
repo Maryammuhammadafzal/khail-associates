@@ -136,7 +136,7 @@
 .awards-bg {
   background-image: url('/images/awards-bg.webp');
   background-position: right;
-  background-size: auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
