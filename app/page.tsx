@@ -17,6 +17,7 @@ import AwardsSection from "@/components/awards-section";
 import PhilosophySection from "@/components/philosophy-section";
 import TestimonialSection from "@/components/testimonial-section";
 import Footer from "@/components/footer";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
   const [theme, setTheme] = useState(true);
@@ -41,6 +42,43 @@ export default function Home() {
     });
   }, []);
 
+  const projects_data = [
+    {
+      image: '/images/Project-image-1-min.jpeg',
+      title: 'Leading Architecture & Interior Design Firm in Karachi',
+      nickname: 'Architecture'
+    },
+    {
+      image: '/images/Project-image-2-min.jpeg',
+      title: 'Architect By Yousuf',
+      nickname: 'Architecture'
+    },
+    {
+      image: '/images/Project-image-3-min.jpeg',
+      title: 'Architect By Yousuf',
+      nickname: 'Architecture'
+    },
+    {
+      image: '/images/Project-image-4-min.jpeg',
+      title: 'Architect By Yousuf',
+      nickname: 'Architecture'
+    },
+    {
+      image: '/images/Project-image-5-min.jpeg',
+      title: 'Architect By Yousuf',
+      nickname: 'Architecture'
+    },
+    {
+      image: '/images/Project-image-6-min.jpeg',
+      title: 'Architect By Yousuf',
+      nickname: 'Architecture'
+    },
+    {
+      image: '/images/Project-image-7-min.jpeg',
+      title: 'Architect By Yousuf',
+      nickname: 'Architecture'
+    },
+  ]
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -59,9 +97,9 @@ export default function Home() {
           {/* header */}
           <div className="w-full bg-black/10 absolute top-0 left-0 h-auto flex justify-between ">
             <div className="menu w-auto  py-0 pl-8 pr-8 border-r border-white/30">
-             <Image src="/images/logo.png" alt="logo" width={100} height={100} className="w-auto h-auto" />
+              <Image src="/images/logo.png" alt="logo" width={100} height={100} className="w-auto h-auto" />
             </div>
-           
+
 
             <div className="logo w-auto h- px-20 text-center h-screen border-l py-8 border-r border-white/30 flex justify-center ">
               <h2 data-aos="fade-down" className="text-white  text-center font-bold text-4xl uppercase">Khail Associates</h2>
@@ -77,28 +115,220 @@ export default function Home() {
             </div>
           </div>
 
-           <nav className="menu w-full absolute top-20 left-0  py-8 pl-8 ">
-              <ul className="menu-item letter-spacing pr-24 w-auto h-auto gap-24 flex justify-center  text-white">
-                <li data-aos="fade-right" className="text-base text-white group flex relative flex-col gap-2 hover:text-white/50 uppercase">
-                  <Link href="/">Home</Link>
-                  <div className="w-[100px] h-[100px] hidden p-3 absolute top-6 left-0 flex-col gap-3 bg-black group-hover:flex">
+          <nav className="menu w-full absolute top-20 left-0  py-8 pl-8 ">
+            <ul className="menu-item letter-spacing pr-24 w-auto h-auto gap-24 flex justify-center  text-white">
+              <li className="relative group">
+                <Link
+                  href="/"
+                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                >
+                  Home
+                </Link>
 
-                  </div>
-                </li>
-                <li data-aos="fade-right" className="text-base text-white hover:text-white/50 uppercase">
-                  <Link href="/about">About</Link>
-                </li>
-                <li data-aos="fade-right" className="text-base text-white hover:text-white/50 uppercase">
-                  <Link href="/services">Services</Link>
-                </li>
-                <li data-aos="fade-right" className="text-base text-white hover:text-white/50 uppercase">
-                  <Link href="/projects">Projects</Link>
-                </li>
-                <li data-aos="fade-right" className="text-base text-white hover:text-white/50 uppercase">
-                  <Link href="/contact">Contact</Link>
-                </li>
-              </ul>
-            </nav>
+                <div
+                  className="
+      absolute left-0 top-full mt-6 z-50 w-[420px]
+      bg-neutral-900 shadow-2xl overflow-hidden
+      opacity-0 invisible translate-y-4 scale-95
+      transition-all duration-300 ease-out
+      group-hover:opacity-100 
+      group-hover:visible 
+      group-hover:translate-y-0 
+      group-hover:scale-100
+    "
+                >
+                  <Card className="border-none shadow-none bg-transparent rounded-none">
+                    <CardContent className="p-5">
+                      <div className="h-[250px] overflow-hidden">
+                        <Image
+                          src="/images/hero-image.webp"
+                          alt="Featured Project"
+                          width={400}
+                          height={500}
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+                        />
+                      </div>
+
+                      <div className="mt-4 text-white">
+                        <h2 className="text-lg font-semibold tracking-wide">
+                          {projects_data[0].title}
+                        </h2>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </li>
+
+              <li className="relative group">
+                <Link
+                  href="/about"
+                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                >
+                  About
+                </Link>
+
+                <div
+                  className="
+      absolute left-0 top-full mt-6 z-50 w-[420px]
+      bg-neutral-900 shadow-2xl overflow-hidden
+      opacity-0 invisible translate-y-4 scale-95
+      transition-all duration-300 ease-out
+      group-hover:opacity-100 
+      group-hover:visible 
+      group-hover:translate-y-0 
+      group-hover:scale-100
+    "
+                >
+                  <Card className="border-none shadow-none bg-transparent rounded-none">
+                    <CardContent className="p-5">
+                      <div className="h-[250px] overflow-hidden">
+                        <Image
+                          src="/images/hero-image.webp"
+                          alt="Featured Project"
+                          width={400}
+                          height={500}
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+                        />
+                      </div>
+
+                      <div className="mt-4 text-white">
+                        <h2 className="text-lg font-semibold tracking-wide">
+                          {projects_data[0].title}
+                        </h2>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </li>
+
+              <li className="relative group">
+                <Link
+                  href="/services"
+                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                >
+                  Services
+                </Link>
+
+                <div
+                  className="
+      absolute left-0 top-full mt-6 z-50 w-[420px]
+      bg-neutral-900 shadow-2xl overflow-hidden
+      opacity-0 invisible translate-y-4 scale-95
+      transition-all duration-300 ease-out
+      group-hover:opacity-100 
+      group-hover:visible 
+      group-hover:translate-y-0 
+      group-hover:scale-100
+    "
+                >
+                  <Card className="border-none shadow-none bg-transparent rounded-none">
+                    <CardContent className="p-5">
+                      <div className="h-[250px] overflow-hidden">
+                        <Image
+                          src="/images/hero-image.webp"
+                          alt="Featured Project"
+                          width={400}
+                          height={500}
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+                        />
+                      </div>
+
+                      <div className="mt-4 text-white">
+                        <h2 className="text-lg font-semibold tracking-wide">
+                          {projects_data[0].title}
+                        </h2>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </li>
+
+              <li className="relative group">
+                <Link
+                  href="/projects"
+                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                >
+                  Projects
+                </Link>
+
+                <div
+                  className="
+      absolute left-0 top-full mt-6 z-50 w-[420px]
+      bg-neutral-900 shadow-2xl overflow-hidden
+      opacity-0 invisible translate-y-4 scale-95
+      transition-all duration-300 ease-out
+      group-hover:opacity-100 
+      group-hover:visible 
+      group-hover:translate-y-0 
+      group-hover:scale-100
+    "
+                >
+                  <Card className="border-none shadow-none bg-transparent rounded-none">
+                    <CardContent className="p-5">
+                      <div className="h-[250px] overflow-hidden">
+                        <Image
+                          src="/images/hero-image.webp"
+                          alt="Featured Project"
+                          width={400}
+                          height={500}
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+                        />
+                      </div>
+
+                      <div className="mt-4 text-white">
+                        <h2 className="text-lg font-semibold tracking-wide">
+                          {projects_data[0].title}
+                        </h2>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </li>
+
+              <li className="relative group">
+                <Link
+                  href="/contact"
+                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                >
+                  Contact
+                </Link>
+
+                <div
+                  className="
+      absolute left-0 top-full mt-6 z-50 w-[420px]
+      bg-neutral-900 shadow-2xl overflow-hidden
+      opacity-0 invisible translate-y-4 scale-95
+      transition-all duration-300 ease-out
+      group-hover:opacity-100 
+      group-hover:visible 
+      group-hover:translate-y-0 
+      group-hover:scale-100
+    "
+                >
+                  <Card className="border-none shadow-none bg-transparent rounded-none">
+                    <CardContent className="p-5">
+                      <div className="h-[250px] overflow-hidden">
+                        <Image
+                          src="/images/hero-image.webp"
+                          alt="Featured Project"
+                          width={400}
+                          height={500}
+                          className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+                        />
+                      </div>
+
+                      <div className="mt-4 text-white">
+                        <h2 className="text-lg font-semibold tracking-wide">
+                          {projects_data[0].title}
+                        </h2>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </li>
+
+            </ul>
+          </nav>
 
           {/* Sidebar */}
           <div className={`fixed top-0 left-0 h-screen w-[60%] bg-neutral-900 text-white z-50 
@@ -172,7 +402,7 @@ export default function Home() {
         <AwardsSection />
         <PhilosophySection />
         <TestimonialSection />
-        <Footer/>
+        <Footer />
       </main>
     </div>
   );
