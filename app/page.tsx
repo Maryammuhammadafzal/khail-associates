@@ -58,10 +58,32 @@ export default function Home() {
 
           {/* header */}
           <div className="w-full bg-black/10 absolute top-0 left-0 h-auto flex justify-between ">
-            <nav className="menu w-auto  py-8 pl-8 border-r border-white/30">
-              <ul className="menu-item letter-spacing pr-24 w-auto h-auto gap-2 flex flex-col text-white">
-                <li data-aos="fade-right" className="text-base text-white hover:text-white/50 uppercase">
+            <div className="menu w-auto  py-0 pl-8 pr-8 border-r border-white/30">
+             <Image src="/images/logo.png" alt="logo" width={100} height={100} className="w-auto h-auto" />
+            </div>
+           
+
+            <div className="logo w-auto h- px-20 text-center h-screen border-l py-8 border-r border-white/30 flex justify-center ">
+              <h2 data-aos="fade-down" className="text-white  text-center font-bold text-4xl uppercase">Khail Associates</h2>
+            </div>
+
+            <div className="w-auto h-auto border-l border-white/50  py-8 pr-8 ">
+              <div data-aos="fade-left" onClick={() => toggleTheme()} className="theme items-center pl-20 w-auto h-auto  flex gap-6">
+                {theme === true ? (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><MoonIcon size={20} /> Dark Mode</span>) : (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><SunDimIcon size={20} /> Light Mode</span>)}
+                <div className="menu-icon text-white ">
+                  <TbMenu3 size={34} onClick={() => setOpenMenu(true)} />
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <nav className="menu w-full absolute top-20 left-0  py-8 pl-8 ">
+              <ul className="menu-item letter-spacing pr-24 w-auto h-auto gap-24 flex justify-center  text-white">
+                <li data-aos="fade-right" className="text-base text-white group flex relative flex-col gap-2 hover:text-white/50 uppercase">
                   <Link href="/">Home</Link>
+                  <div className="w-[100px] h-[100px] hidden p-3 absolute top-6 left-0 flex-col gap-3 bg-black group-hover:flex">
+
+                  </div>
                 </li>
                 <li data-aos="fade-right" className="text-base text-white hover:text-white/50 uppercase">
                   <Link href="/about">About</Link>
@@ -77,20 +99,6 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
-
-            <div className="logo w-auto h- px-20 text-center h-screen border-l py-8 border-r border-white/30 flex justify-center ">
-              <h2 data-aos="fade-down" className="text-white  text-center font-bold text-4xl uppercase">Khail Associates</h2>
-            </div>
-
-            <div className="w-auto h-auto border-l border-white/50  py-8 pr-8 ">
-              <div data-aos="fade-left" onClick={() => toggleTheme()} className="theme items-center pl-20 w-auto h-auto  flex gap-6">
-                {theme === true ? (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><MoonIcon size={20} /> Dark Mode</span>) : (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><SunDimIcon size={20} /> Light Mode</span>)}
-                <div className="menu-icon text-white ">
-                  <TbMenu3 size={34} onClick={() => setOpenMenu(true)} />
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Sidebar */}
           <div className={`fixed top-0 left-0 h-screen w-[60%] bg-neutral-900 text-white z-50 
@@ -138,20 +146,20 @@ export default function Home() {
           </div>
 
           {/* hero content */}
-          <div className="hero-content absolute top-50 left-50  w-auto min-w-[50%] min-h-[50%] h-fit flex justify-center items-center">
-            <div className="w-auto h-auto flex flex-col gap-4">
-              <div data-aos="fade-right" className="sub-heading flex gap-2 items-center">
+          <div className="hero-content absolute top-70   w-auto min-w-[50%] min-h-[50%] h-fit flex justify-center items-center">
+            <div className="w-auto h-auto flex flex-col gap-4 justify-center text-center">
+              <div data-aos="fade-right" className="sub-heading flex gap-2 items-center justify-center">
                 <div className="w-1 h-1 bg-white rounded-full"></div>
                 <h4 className="text-base letter-spacing text-white uppercase">
                   We are a multidisciplinary
                 </h4>
 
               </div>
-              <h1 data-aos="fade-right" className="text-white font-medium text-7xl max-w-xl">
+              <h1 data-aos="fade-right" className="text-white font-medium text-7xl max-w-2xl m-auto">
                 Full-service Architecture Studio
               </h1>
-              <p data-aos="fade-right" className="text-white text-xl max-w-lg">Archdeco Studio has implemented more than 600 projects in 25 countries.</p>
-              <Button data-aos="fade-right" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>
+              <p data-aos="fade-right" className="text-white text-xl max-w-xl m-auto">Archdeco Studio has implemented more than 600 projects in 25 countries.</p>
+              <Button data-aos="fade-right" className="bg-neutral-800 m-auto text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>
             </div>
           </div>
 
