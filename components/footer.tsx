@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { FaFacebookF, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaLinkedin, FaPhone } from 'react-icons/fa'
+import { MdEmail } from 'react-icons/md'
 
 const Footer = () => {
     return (
@@ -56,19 +57,30 @@ const Footer = () => {
 
 
                 <div className="w-auto h-auto flex flex-col gap-1">
-                    <p className="font-medium text-lg">
-                        +92 332 333333
-                    </p>
-                    <p className="font-medium text-lg">
-                        khailasociates@gmail.com
-                    </p>
-                    <div className="flex gap-4 text-xl">
-
-                        <FaFacebookF />
-                        <FaInstagram />
-                        <FaLinkedin />
-                    </div>
-                </div>
+                        <p className="font-medium text-lg">
+                          <Link href="tel:+923323333333" className="flex items-center gap-3">
+                            <FaPhone className="rotate-90" />
+                            +92 332 333333
+                          </Link>
+                        </p>
+                        <p className="font-medium text-lg flex items-center gap-3">
+                          <Link href="mailto:khailasociates@gmail.com" className="flex items-center gap-3">
+                            <MdEmail />
+                            khailasociates@gmail.com
+                          </Link>
+                        </p>
+                        <div className="flex gap-4 mt-5 text-xl">
+                          <Link href="https://www.facebook.com/khailassociates" target="_blank">
+                            <FaFacebookF />
+                          </Link>
+                          <Link href="https://www.instagram.com/khailassociates/" target="_blank">
+                            <FaInstagram />
+                          </Link>
+                          <Link href="https://www.linkedin.com/company/khail-associates/" target="_blank">
+                            <FaLinkedin />
+                          </Link>
+                        </div>
+                      </div>
 
                 <div className="w-auto h-auto flex flex-col gap-1">
                     <p className='text-sm'>Copyright © 2025. All Rights Reserved.</p>

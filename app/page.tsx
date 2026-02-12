@@ -6,7 +6,7 @@ import { ArrowRightCircle, ArrowUpRight, ArrowUpRightFromCircle, Facebook, Faceb
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaFacebookF, FaInstagram, FaInstagramSquare, FaLinkedin } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaInstagramSquare, FaLinkedin, FaPhone } from "react-icons/fa";
 import { TbMenu3 } from "react-icons/tb";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -18,6 +18,8 @@ import PhilosophySection from "@/components/philosophy-section";
 import TestimonialSection from "@/components/testimonial-section";
 import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
+import { MdEmail } from "react-icons/md";
+import { BsArrowUpRight } from "react-icons/bs";
 
 export default function Home() {
   const [theme, setTheme] = useState(true);
@@ -120,7 +122,7 @@ export default function Home() {
               <li className="relative group">
                 <Link
                   href="/"
-                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                  className="text-base text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                 >
                   Home
                 </Link>
@@ -162,9 +164,9 @@ export default function Home() {
               <li className="relative group">
                 <Link
                   href="/about"
-                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                  className="text-base text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                 >
-                  About
+                  About Us
                 </Link>
 
                 <div
@@ -181,9 +183,15 @@ export default function Home() {
                 >
                   <Card className="border-none shadow-none bg-transparent rounded-none">
                     <CardContent className="p-5">
-                      <div className="h-[250px] overflow-hidden">
+                      <div className="h-[400px] overflow-hidden">
+                        <div className="mb-4 text-white">
+                          <h2 className="text-lg font-semibold tracking-wide">
+                            We Design Spaces That Inspire. Functional. Timeless. Sustainable.
+                          </h2>
+                          <p className="mt-2 text-white text-xs" >At Khail Associates, we are passionate about creating spaces that inspire and elevate the human experience. </p>
+                        </div>
                         <Image
-                          src="/images/hero-image.webp"
+                          src="/images/about-picture.webp"
                           alt="Featured Project"
                           width={400}
                           height={500}
@@ -191,106 +199,161 @@ export default function Home() {
                         />
                       </div>
 
-                      <div className="mt-4 text-white">
-                        <h2 className="text-lg font-semibold tracking-wide">
-                          {projects_data[0].title}
-                        </h2>
-                      </div>
                     </CardContent>
                   </Card>
                 </div>
               </li>
-
               <li className="relative group">
                 <Link
                   href="/services"
-                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                  className="text-base text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                 >
-                  Services
+                  Our Services
                 </Link>
 
                 <div
                   className="
-      absolute left-0 top-full mt-6 z-50 w-[420px]
-      bg-neutral-900 shadow-2xl overflow-hidden
-      opacity-0 invisible translate-y-4 scale-95
+      absolute left-0 top-full mt-6 z-50 w-[400px]
+      bg-neutral-900 border border-white/10
+      opacity-0 invisible translate-y-4
       transition-all duration-300 ease-out
       group-hover:opacity-100 
       group-hover:visible 
-      group-hover:translate-y-0 
-      group-hover:scale-100
+      group-hover:translate-y-0
     "
                 >
-                  <Card className="border-none shadow-none bg-transparent rounded-none">
-                    <CardContent className="p-5">
-                      <div className="h-[250px] overflow-hidden">
-                        <Image
-                          src="/images/hero-image.webp"
-                          alt="Featured Project"
-                          width={400}
-                          height={500}
-                          className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
-                        />
-                      </div>
+                  <div className="flex flex-col py-3">
 
-                      <div className="mt-4 text-white">
-                        <h2 className="text-lg font-semibold tracking-wide">
-                          {projects_data[0].title}
-                        </h2>
-                      </div>
-                    </CardContent>
-                  </Card>
+                    {[
+                      { title: "Architectural Design", link: "/services/architecture" },
+                      { title: "Interior Design", link: "/services/interior" },
+                      { title: "Renovation & Remodeling", link: "/services/renovation" },
+                    ].map((item, i) => (
+                      <Link
+                        key={i}
+                        href={item.link}
+                        className="
+        flex gap-10 items-center justify-between
+        px-6 py-3
+        text-sm tracking-wider uppercase
+        text-white
+        hover:bg-white hover:text-neutral-900
+        transition-all duration-300 group/item
+      "
+                      >
+                        <span>{item.title}</span>
+
+                        <span
+                          className="
+          flex items-center justify-center
+          w-8 h-8
+          border border-white/40
+          rounded-full
+          transition-all duration-300
+          group-hover/item:border-neutral-900
+        "
+                        >
+                          <ArrowUpRight
+                            size={14}
+                            className="transition-transform duration-300 group-hover/item:translate-x-0.5 group-hover/item:-translate-y-0.5"
+                          />
+                        </span>
+                      </Link>
+                    ))}
+
+                  </div>
+
                 </div>
               </li>
-
               <li className="relative group">
                 <Link
                   href="/projects"
-                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                  className="text-base text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                 >
                   Projects
                 </Link>
 
                 <div
                   className="
-      absolute left-0 top-full mt-6 z-50 w-[420px]
-      bg-neutral-900 shadow-2xl overflow-hidden
+      absolute left-0 top-full mt-6 z-50 w-[620px]
+      bg-neutral-900 border border-white/10
+      p-6
       opacity-0 invisible translate-y-4 scale-95
       transition-all duration-300 ease-out
-      group-hover:opacity-100 
-      group-hover:visible 
-      group-hover:translate-y-0 
+      group-hover:opacity-100
+      group-hover:visible
+      group-hover:translate-y-0
       group-hover:scale-100
     "
                 >
-                  <Card className="border-none shadow-none bg-transparent rounded-none">
-                    <CardContent className="p-5">
-                      <div className="h-[250px] overflow-hidden">
-                        <Image
-                          src="/images/hero-image.webp"
-                          alt="Featured Project"
-                          width={400}
-                          height={500}
-                          className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
-                        />
-                      </div>
+                  <div className="grid grid-cols-3 gap-6">
 
-                      <div className="mt-4 text-white">
-                        <h2 className="text-lg font-semibold tracking-wide">
-                          {projects_data[0].title}
-                        </h2>
-                      </div>
-                    </CardContent>
-                  </Card>
+                    {[
+                      {
+                        image: "/images/project-image-1-min.jpeg",
+                        title: "Modern Residence",
+                        category: "Residential",
+                        link: "/projects/modern-residence",
+                      },
+                      {
+                        image: "/images/project-image-2-min.jpeg",
+                        title: "Corporate Office",
+                        category: "Commercial",
+                        link: "/projects/corporate-office",
+                      },
+                      {
+                        image: "/images/project-image-3-min.jpeg",
+                        title: "Luxury Villa",
+                        category: "High-End Living",
+                        link: "/projects/luxury-villa",
+                      },
+                    ].map((project, i) => (
+                      <Link
+                        key={i}
+                        href={project.link}
+                        className="group/item relative overflow-hidden"
+                      >
+                        <div className="h-[170px] overflow-hidden">
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            width={400}
+                            height={500}
+                            className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover/item:scale-110"
+                          />
+                        </div>
+
+                        {/* Overlay */}
+                        <div className="
+              absolute inset-0 bg-black/40
+              opacity-0 group-hover/item:opacity-100
+              transition-opacity duration-300
+            "
+                        />
+
+                        {/* Text */}
+                        <div className="mt-3">
+                          <p className="text-xs tracking-widest text-neutral-400 uppercase">
+                            {project.category}
+                          </p>
+                          <h3 className="text-sm font-medium text-white mt-1 tracking-wide">
+                            {project.title}
+                          </h3>
+                        </div>
+                      </Link>
+                    ))}
+
+                  </div>
                 </div>
               </li>
+
 
               <li className="relative group">
                 <Link
                   href="/contact"
-                  className="text-base text-white font-semibold uppercase hover:text-black/80 transition-colors duration-300"
+                  className="text-base text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                 >
-                  Contact
+                  Contact Us
                 </Link>
 
                 <div
@@ -305,22 +368,32 @@ export default function Home() {
       group-hover:scale-100
     "
                 >
-                  <Card className="border-none shadow-none bg-transparent rounded-none">
+                  <Card className="border-none shadow-none text-white bg-transparent rounded-none">
                     <CardContent className="p-5">
-                      <div className="h-[250px] overflow-hidden">
-                        <Image
-                          src="/images/hero-image.webp"
-                          alt="Featured Project"
-                          width={400}
-                          height={500}
-                          className="w-full h-full object-cover transition-transform duration-700 ease-out hover:scale-105"
-                        />
-                      </div>
-
-                      <div className="mt-4 text-white">
-                        <h2 className="text-lg font-semibold tracking-wide">
-                          {projects_data[0].title}
-                        </h2>
+                      <div className="w-auto h-auto flex flex-col gap-1">
+                        <p className="font-medium text-lg">
+                          <Link href="tel:+923323333333" className="flex items-center gap-3">
+                            <FaPhone className="rotate-90" />
+                            +92 332 333333
+                          </Link>
+                        </p>
+                        <p className="font-medium text-lg flex items-center gap-3">
+                          <Link href="mailto:khailasociates@gmail.com" className="flex items-center gap-3">
+                            <MdEmail />
+                            khailasociates@gmail.com
+                          </Link>
+                        </p>
+                        <div className="flex gap-4 mt-5 text-xl">
+                          <Link href="https://www.facebook.com/khailassociates" target="_blank">
+                            <FaFacebookF />
+                          </Link>
+                          <Link href="https://www.instagram.com/khailassociates/" target="_blank">
+                            <FaInstagram />
+                          </Link>
+                          <Link href="https://www.linkedin.com/company/khail-associates/" target="_blank">
+                            <FaLinkedin />
+                          </Link>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
@@ -351,9 +424,9 @@ export default function Home() {
                 <ul className="px-18 py-2 space-y-12">
                   <li className="text-[40px] uppercase font-semibold">Home</li>
                   <li className="text-[40px] uppercase font-semibold">About Us</li>
-                  <li className="text-[40px] uppercase font-semibold">Services</li>
+                  <li className="text-[40px] uppercase font-semibold">Our Services</li>
                   <li className="text-[40px] uppercase font-semibold">Projects</li>
-                  <li className="text-[40px] uppercase font-semibold">Contact</li>
+                  <li className="text-[40px] uppercase font-semibold">Contact Us</li>
                 </ul>
               </div>
 
@@ -365,13 +438,11 @@ export default function Home() {
                   khailasociates@gmail.com
                 </p>
                 <div className="flex gap-4 py-4 text-xl">
-
                   <FaFacebookF />
                   <FaInstagram />
                   <FaLinkedin />
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -381,14 +452,13 @@ export default function Home() {
               <div data-aos="fade-right" className="sub-heading flex gap-2 items-center justify-center">
                 <div className="w-1 h-1 bg-white rounded-full"></div>
                 <h4 className="text-base letter-spacing text-white uppercase">
-                  We are a multidisciplinary
+                  Pakistan's Trusted Architecture
                 </h4>
-
               </div>
               <h1 data-aos="fade-right" className="text-white font-medium text-7xl max-w-2xl m-auto">
-                Full-service Architecture Studio
+                Karachi's Premier Architecture & Interior Design Firm
               </h1>
-              <p data-aos="fade-right" className="text-white text-xl max-w-xl m-auto">Archdeco Studio has implemented more than 600 projects in 25 countries.</p>
+              <p data-aos="fade-right" className="text-white text-xl max-w-xl m-auto">Transform your dream home or commercial space into reality with Pakistan's most trusted architectural designers</p>
               <Button data-aos="fade-right" className="bg-neutral-800 m-auto text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>
             </div>
           </div>
