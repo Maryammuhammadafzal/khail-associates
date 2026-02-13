@@ -26,7 +26,7 @@ const ProcessSection = ({subheading, heading, paragraph, image}: any) => {
                         {paragraph ? paragraph : ''}
                          </p>
                 </div>
-                <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>
+                <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white hover:border hover:border-neutral-800 transition delay-150 duration-300 ease-in-out">Whatsapp <ArrowUpRight size={16} /></Button>
             </div>
             <div className='relative w-[60%] h-screen flex justify-center items-center'>
                 <Image data-aos="zoom-in-up" src={'/images/process-bg.webp'} alt='Architectural process illustration' width={1800} height={1800} className='' />

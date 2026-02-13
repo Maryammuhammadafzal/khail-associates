@@ -88,14 +88,14 @@ export default function ContactPage() {
             <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white dark:bg-black sm:items-start">
 
                 {/* Hero Section */}
-                 <HeroSection subheading="About us" heading="About Khail Associates - Building Dreams Across Pakistan" paragraph="Established in Karachi, Khail Associates has grown to become one of Pakistan's most respected architecture and interior design firms. Our journey began with a simple mission: to provide Pakistanis with world-class architectural services that respect our cultural heritage while embracing modern innovation." image="/images/image-3.jpeg" />
+                 <HeroSection subheading="Contact us" heading="Get in Touch with Karachi's Trusted Architects" paragraph="Ready to start your dream project? Whether you have a clear vision or need guidance on where to begin, we're here to help. Schedule a free consultation with our team to discuss your architectural and interior design needs." image="/images/image-5.jpeg" />
 
                 {/* <AboutSection />
                 <FeaturesSection />
                 <ProjectSection /> */}
                 <ProcessSection subheading="Contact us" heading="Get in Touch with Karachi's Trusted Architects" paragraph="Ready to start your dream project? Whether you have a clear vision or need guidance on where to begin, we're here to help. Schedule a free consultation with our team to discuss your architectural and interior design needs." />
-                {/* <AwardsSection /> */}
-                <PhilosophySection />
+                <AwardsSection />
+                {/* <PhilosophySection /> */}
                 <TestimonialSection />
                 <Footer />
             </main>
