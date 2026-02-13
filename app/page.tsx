@@ -468,7 +468,7 @@ export default function Home() {
         <AboutSection />
         <FeaturesSection />
         <ProjectSection />
-        <ProcessSection />
+        <ProcessSection subheading="Our Process" heading="Great Design Starts with Understanding People, Not Just Buildings" paragraph="The main areas of work are architectural design, interior design, project completion, industrial design, ceramic production of decorative items and furniture. Our highly collaborative, award-winning team will help you achieve your goals for a distinctive design, inspired by what you find most important and beautiful." image="/images/process-bg.webp" />
         <AwardsSection />
         <PhilosophySection />
         <TestimonialSection />

@@ -21,7 +21,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MdEmail } from "react-icons/md";
 import { BsArrowUpRight } from "react-icons/bs";
 
-export default function ContactPage() {
+export default function Home() {
     const [theme, setTheme] = useState(true);
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -447,29 +447,55 @@ export default function ContactPage() {
                     </div>
 
                     {/* hero content */}
-                    <div className="hero-content absolute top-70 w-auto min-w-[50%] min-h-[50%] h-fit flex justify-center items-center">
+                    <div className="hero-content absolute top-70   w-auto min-w-[50%] min-h-[50%] h-fit flex justify-center items-center">
                         <div className="w-auto h-auto flex flex-col gap-4 justify-center text-center">
                             <div data-aos="fade-right" className="sub-heading flex gap-2 items-center justify-center">
                                 <div className="w-1 h-1 bg-white rounded-full"></div>
                                 <h4 className="text-base letter-spacing text-white uppercase">
-                                    Schedule a free consultation
+                                    Pakistan's Trusted Architecture
                                 </h4>
                             </div>
                             <h1 data-aos="fade-right" className="text-white font-medium text-7xl max-w-2xl m-auto">
-                                Get in Touch with Karachi's Trusted Architects
+                                Karachi's Premier Architecture & Interior Design Firm
                             </h1>
-                            <p data-aos="fade-right" className="text-white text-xl max-w-xl m-auto">Ready to start your dream project? Whether you have a clear vision or need guidance on where to begin, we're here to help.</p>
+                            <p data-aos="fade-right" className="text-white text-xl max-w-xl m-auto">Transform your dream home or commercial space into reality with Pakistan's most trusted architectural designers</p>
                             <Button data-aos="fade-right" className="bg-neutral-800 m-auto text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>
                         </div>
                     </div>
 
                 </section>
 
-                {/* <AboutSection />
+                <AboutSection />
+
+                {/* our Work section */}
+                <section className="process-section dark:bg-neutral-900 relative px-8 py-24  w-full h-auto min-h-screen flex  justify-center items-center">
+
+                    <div className='relative w-[60%] h-screen flex justify-center items-center'>
+                        <Image data-aos="zoom-in-up" src={'/images/process-bg.webp'} alt='Architectural process illustration' width={1800} height={1800} className='' />
+                    </div>
+
+                    <div className="relative w-[40%] h-screen px-12 flex flex-col py-14 border-l dark:border-neutral-300/30 border-neutral-400/50 justify-between ">
+
+                        <div className="w-auto h-screen flex flex-col gap-12">
+
+                            <h1 data-aos="fade-up" className="dark:text-white text-neutral-800 font-medium text-5xl leading-14 max-w-4xl">
+                                About Our Work
+
+                            </h1>
+                            <p data-aos="fade-up" className="dark:text-white text-neutral-800 text-lg max-w-3xl">
+                                The main areas of work are architectural design, interior design, project completion, industrial design, ceramic production of decorative items and furniture.
+                                <br /><br />
+                                We create beautiful interiors that reflect our client’s unique personalities. Spaces designed to be lived in, not just looked at. Forever homes, not show homes. We understand every detail that goes into crafting a beautiful space. We use our experience and specialist skills to keep things running smoothly, on budget and on time. We plan ahead. Measure twice, cut once.
+                            </p>
+                        </div>
+                        <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>
+                    </div>
+                </section>
+
                 <FeaturesSection />
-                <ProjectSection /> */}
-                <ProcessSection subheading="Contact us" heading="Get in Touch with Karachi's Trusted Architects" paragraph="Ready to start your dream project? Whether you have a clear vision or need guidance on where to begin, we're here to help. Schedule a free consultation with our team to discuss your architectural and interior design needs." />
-                {/* <AwardsSection /> */}
+                <ProjectSection />
+                <ProcessSection subheading="Our Process" heading="Great Design Starts with Understanding People, Not Just Buildings" paragraph="The main areas of work are architectural design, interior design, project completion, industrial design, ceramic production of decorative items and furniture. Our highly collaborative, award-winning team will help you achieve your goals for a distinctive design, inspired by what you find most important and beautiful." image="/images/process-bg.webp" />
+                <AwardsSection />
                 <PhilosophySection />
                 <TestimonialSection />
                 <Footer />
