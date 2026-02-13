@@ -22,7 +22,7 @@ import { MdEmail } from "react-icons/md";
 import { BsArrowUpRight } from "react-icons/bs";
 import HeroSection from "@/components/hero-section";
 
-export default function Home() {
+export default function AnoutPage() {
     const [theme, setTheme] = useState(true);
     const [openMenu, setOpenMenu] = useState(false);
 
