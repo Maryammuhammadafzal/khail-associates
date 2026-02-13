@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Josefin_Sans, Geist_Mono } from "next/font/google";
+import { Josefin_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 
 const dmSans = Josefin_Sans({
@@ -7,9 +7,10 @@ const dmSans = Josefin_Sans({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geistMono = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" ,"900"]
 });
 
 export const metadata: Metadata = {
