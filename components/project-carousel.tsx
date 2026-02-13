@@ -9,51 +9,64 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
+import Autoplay from "embla-carousel-autoplay"
+import { useRef } from "react"
+
 
 export function ProjectCarousel() {
 
+    const plugin = useRef(
+        Autoplay({
+            delay: 1000,
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+        })
+    )
     const projects_data = [
         {
-            image : '/images/Project-image-1-min.jpeg',
-            title : 'Architect By Yousuf',
-            nickname : 'Architecture'
+            image: '/images/Project-image-1-min.jpeg',
+            title: 'Architect By Yousuf',
+            nickname: 'Architecture'
         },
         {
-            image : '/images/Project-image-2-min.jpeg',
-            title : 'Architect By Yousuf',
-            nickname : 'Architecture'
+            image: '/images/Project-image-2-min.jpeg',
+            title: 'Architect By Yousuf',
+            nickname: 'Architecture'
         },
         {
-            image : '/images/Project-image-3-min.jpeg',
-            title : 'Architect By Yousuf',
-            nickname : 'Architecture'
+            image: '/images/Project-image-3-min.jpeg',
+            title: 'Architect By Yousuf',
+            nickname: 'Architecture'
         },
         {
-            image : '/images/Project-image-4-min.jpeg',
-            title : 'Architect By Yousuf',
-            nickname : 'Architecture'
+            image: '/images/Project-image-4-min.jpeg',
+            title: 'Architect By Yousuf',
+            nickname: 'Architecture'
         },
         {
-            image : '/images/Project-image-5-min.jpeg',
-            title : 'Architect By Yousuf',
-            nickname : 'Architecture'
+            image: '/images/Project-image-5-min.jpeg',
+            title: 'Architect By Yousuf',
+            nickname: 'Architecture'
         },
         {
-            image : '/images/Project-image-6-min.jpeg',
-            title : 'Architect By Yousuf',
-            nickname : 'Architecture'
+            image: '/images/Project-image-6-min.jpeg',
+            title: 'Architect By Yousuf',
+            nickname: 'Architecture'
         },
         {
-            image : '/images/Project-image-7-min.jpeg',
-            title : 'Architect By Yousuf',
-            nickname : 'Architecture'
+            image: '/images/Project-image-7-min.jpeg',
+            title: 'Architect By Yousuf',
+            nickname: 'Architecture'
         },
     ]
 
     return (
         <Carousel
+            plugins={[plugin.current]}
             opts={{
                 align: "start",
+                loop: true,
+                containScroll: "trimSnaps",
             }}
             className="w-full"
         >
@@ -64,7 +77,7 @@ export function ProjectCarousel() {
                             <Card className="p-3 border-none shadow-none bg-transparent">
                                 <CardContent className="flex flex-col gap-6 p-2">
                                     <div className="w-full h-[500px]">
-                                    <Image src={project.image} alt="image" width={400} height={500} className="w-full h-full object-cover object-center" />
+                                        <Image src={project.image} alt="image" width={400} height={500} className="w-full h-full object-cover object-center" />
                                     </div>
                                     <div className="flex flex-col gap-2 text-white">
                                         <h2 className="text-2xl font-medium">{project.title}</h2>

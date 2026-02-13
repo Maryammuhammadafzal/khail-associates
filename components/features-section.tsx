@@ -9,19 +9,19 @@ const FeaturesSection = () => {
         {
             icon: '/images/feature-icon-1.png',
             title: 'Architectural Design & Planning',
-            description: 'With a wealth of expertise in the industry, our team understands how important it can be to ensure you find an architectural designer you can trust.',
+            description: "Full architectural design services in Karachi, from concept sketches and construction drawings to KMC and SBCA NOC approvals, ensuring safety, aesthetics, and regulatory compliance.",
             link: 'https://khail-associates.com/services'
         },
         {
             icon: '/images/feature-icon-2.png',
-            title: 'Interior Design & Styling services',
-            description: 'Full service interior design & styling services that include detailed 2D technical plans, 3D visualisations and interior animations which allow you to see your interior7.',
+            title: 'Interior Design & Styling',
+            description: 'Create stunning interiors that reflect your personality and lifestyle with our full-service interior design solutions. From elegant drawing rooms and modern kitchens to professional office spaces and retail showrooms, we craft interiors that are both beautiful and functional.',
             link: 'https://khail-associates.com/services'
         },
         {
             icon: '/images/feature-icon-3.png',
-            title: 'Turnkey Services & Coordination',
-            description: 'Multiple suppliers and different teams to work with can be confusing, exhausting and stressful, which is why a turnkey service is so effective.',
+            title: 'Turnkey Solutions & Project Management',
+            description: 'Leave the stress of construction and coordination to us. Our turnkey services provide end-to-end project management, from design approval to final handover. We coordinate with contractors, suppliers, and craftsmen, ensuring quality control at every stage.',
             link: 'https://khail-associates.com/services'
         },
     ];

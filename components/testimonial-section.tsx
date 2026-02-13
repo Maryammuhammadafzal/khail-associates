@@ -14,12 +14,12 @@ const TestimonialSection = () => {
                     <div data-aos="fade-up" className="sub-heading flex gap-2 items-center">
                         <div className="w-1 h-1 dark:bg-white bg-neutral-800 rounded-full"></div>
                         <h4 className="text-base letter-spacing dark:text-white text-neutral-800 uppercase">
-                            Testimonial
+                           Client Testimonial
                         </h4>
 
                     </div>
                     <h1 data-aos="fade-up" className="dark:text-white text-neutral-800 font-medium text-5xl leading-14 max-w-4xl">
-                        Your happiness with the outcome is our priority. 
+                        Building Trust, One Project at a Time - See Why Families Choose Khail Associates.
                     </h1>
                 </div>
                 <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More<ArrowUpRight size={16} /></Button>

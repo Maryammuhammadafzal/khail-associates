@@ -3,11 +3,13 @@ import Link from 'next/link'
 import React from 'react'
 import { FaFacebookF, FaInstagram, FaLinkedin, FaPhone } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
+import FadeGrid from './fadegrid'
 
 const Footer = () => {
     return (
         <footer className='flex flex-col gap-10 w-full p-6 h-auto justify-center mb-10'>
-            <div className="images grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-3">
+            <FadeGrid/>
+            {/* <div className="images grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-3">
                 <div className='h-[230px] w-[230px] object-cover '>
                     <Image src='/images/image-1.jpeg' alt='Image' className='object-fill w-full h-full' width={200} height={200} />
                 </div>
@@ -26,7 +28,7 @@ const Footer = () => {
                 <div className='h-[230px] w-[230px] object-cover '>
                     <Image src='/images/image-6.jpeg' alt='Image' className='object-fill w-full h-full' width={200} height={200} />
                 </div>
-            </div>
+            </div> */}
 
             <div className="footer grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
                 <div className='h-auto w-auto flex flex-col gap-4'>
