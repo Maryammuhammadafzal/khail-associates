@@ -96,7 +96,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                         <li className="relative group">
                             <Link
                                 href="/"
-                                className="text-base text-black darK:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
+                                className="text-base text-black dark:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                             >
                                 Home
                             </Link>
@@ -138,7 +138,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                         <li className="relative group">
                             <Link
                                 href="/about"
-                                className="text-base text-black darK:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
+                                className="text-base text-black dark:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                             >
                                 About Us
                             </Link>
@@ -180,7 +180,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                         <li className="relative group">
                             <Link
                                 href="/services"
-                                className="text-base text-black darK:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
+                                className="text-base text-black dark:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                             >
                                 Our Services
                             </Link>
@@ -242,7 +242,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                         <li className="relative group">
                             <Link
                                 href="/projects"
-                                className="text-base text-black darK:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
+                                className="text-base text-black dark:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                             >
                                 Projects
                             </Link>
@@ -325,7 +325,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                         <li className="relative group">
                             <Link
                                 href="/contact"
-                                className="text-base text-black darK:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
+                                className="text-base text-black dark:text-white font-semibold uppercase hover:text-neutral-300 transition-colors duration-300"
                             >
                                 Contact Us
                             </Link>
@@ -382,9 +382,9 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                 </div> */}
 
                 <div className="w-[300px] h-auto">
-                    <div data-aos="fade-left" onClick={() => toggleTheme()} className="theme items-center w-auto h-auto flex gap-6">
-                        {theme === true ? (<span className="text-sm font-semibold cursor-pointer uppercase text-black darK:text-white flex gap-2"><MoonIcon size={20} /> Dark Mode</span>) : (<span className="text-sm font-semibold cursor-pointer uppercase text-black darK:text-white flex gap-2"><SunDimIcon size={20} /> Light Mode</span>)}
-                        <div className="menu-icon text-black darK:text-white ">
+                    <div data-aos="fade-left" onClick={() => toggleTheme()} className="theme dark:text-white text-black items-center w-auto h-auto flex gap-6">
+                        {theme === true ? (<span className="text-sm font-semibold cursor-pointer uppercase text-black dark:text-white flex gap-2"><MoonIcon size={20} /> Dark Mode</span>) : (<span className="text-sm font-semibold cursor-pointer uppercase text-black dark:text-white flex gap-2"><SunDimIcon size={20} /> Light Mode</span>)}
+                        <div className="menu-icon text-black dark:text-white ">
                             <TbMenu3 size={34} onClick={() => setOpenMenu(true)} />
                         </div>
                     </div>
