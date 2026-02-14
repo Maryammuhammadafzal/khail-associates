@@ -13,7 +13,7 @@ const ProjectCard = ({ link, index, image, title, nickname }: any) => {
                     </div>
                     <div className="flex flex-col gap-2 text-neutral-800 dark:text-white">
                         <h2 className="text-2xl font-medium">{title}</h2>
-                        <p className="font-semibold text-neutral-800/50 dark:text-white/50">{nickname}</p>
+                        <p className="font-semibold text-neutral-800/50 dark:text-white">{nickname}</p>
                     </div>
                 </CardContent>
             </Card>

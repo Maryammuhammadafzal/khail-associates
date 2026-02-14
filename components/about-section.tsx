@@ -16,8 +16,8 @@ const AboutSection = () => {
                         </h4>
 
                     </div>
-                    <h1 data-aos="fade-up" className="dark:text-white text-neutral-800 font-medium text-8xl uppercase letter-spacing max-w-6xl">
-                       Khail Associates- Where Pakistani Heritage Meets Modern Design
+                    <h1 data-aos="fade-up" className="dark:text-white font-mono text-neutral-800 text-8xl uppercase font-medium letter-spacing max-w-6xl">
+                       Khail Associates Where Every Structure Tells a Story
                     </h1>
                     <p data-aos="fade-up" className="dark:text-white text-neutral-800 text-lg max-w-3xl">Since our establishment in Karachi, Khail Associates has been transforming spaces across Pakistan with architectural excellence and innovative interior design solutions. We understand the unique requirements of Pakistani homeowners and businesses, blending contemporary aesthetics with cultural sensibilities and practical functionality.</p>
                     <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button>

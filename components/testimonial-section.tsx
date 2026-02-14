@@ -19,10 +19,10 @@ const TestimonialSection = () => {
 
                     </div>
                     <h1 data-aos="fade-up" className="dark:text-white text-neutral-800 font-medium text-5xl leading-14 max-w-4xl">
-                        Building Trust, One Project at a Time - See Why Families Choose Khail Associates.
+                        See Why Families Choose Khail Associates.
                     </h1>
                 </div>
-                <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More<ArrowUpRight size={16} /></Button>
+                {/* <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More<ArrowUpRight size={16} /></Button> */}
             </div>
             <div className='relative w-[65%]  py-24 h-auto flex justify-center items-center'>
                 <TestimonialCarousel />
