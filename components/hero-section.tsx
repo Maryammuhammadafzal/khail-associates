@@ -7,8 +7,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaFacebookF, FaInstagram, FaInstagramSquare, FaLinkedin, FaPhone } from "react-icons/fa";
 import { TbMenu3 } from "react-icons/tb";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Card, CardContent } from "@/components/ui/card";
 import { MdEmail } from "react-icons/md";
 import { BsArrowUpRight } from "react-icons/bs";
@@ -87,7 +87,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
 
             {/* header */}
             <div className="w-full h-auto flex justify-between items-center ">
-                <div className="menu w-auto ">
+                <div className="menu w-[220px] ">
                     <Image src="/images/logo.png" alt="logo" width={150} height={150} className="w-auto h-auto" />
                 </div>
 
@@ -352,9 +352,9 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                                                 </Link>
                                             </p>
                                             <p className="font-medium text-lg flex items-center gap-3">
-                                                <Link href="mailto:khailasociates@gmail.com" className="flex items-center gap-3">
+                                                <Link href="mailto:khailassociates@gmail.com" className="flex items-center gap-3">
                                                     <MdEmail />
-                                                    khailasociates@gmail.com
+                                                    khailassociates@gmail.com
                                                 </Link>
                                             </p>
                                             <div className="flex gap-4 mt-5 text-xl">
@@ -425,7 +425,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                             +92 332 333333
                         </p>
                         <p className="font-medium text-lg">
-                            khailasociates@gmail.com
+                            khailassociates@gmail.com
                         </p>
                         <div className="flex gap-4 py-4 text-xl">
                             <FaFacebookF />
@@ -437,7 +437,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
             </div>
 
             {/* hero content */}
-            <section className="philosophy-section bg-[#d4af375b] relative pl-8 w-full h-auto min-h-screen flex  justify-center items-center">
+            <div className="philosophy-section bg-[#d4af375b] relative pl-8 w-full h-auto min-h-screen flex  justify-center items-center">
 
 
                 <div className="relative w-[40%] h-screen px-12 flex flex-col py-14 border-l dark:border-neutral-300/30 border-neutral-400/50 justify-between ">
@@ -462,7 +462,7 @@ const HeroSection = ({ heading, subheading, image, paragraph }: any) => {
                 <div className='relative w-[60%] h-screen flex justify-center items-center'>
                     <Image data-aos="zoom-in-up" src={image} alt='Architectural process illustration' width={900} height={1800} className='h-full w-full' />
                 </div>
-            </section>
+            </div>
 
         </section>
     )

@@ -7,7 +7,7 @@ import FadeGrid from './fadegrid'
 
 const Footer = () => {
     return (
-        <footer className='flex flex-col gap-10 w-full p-6 h-auto justify-center mb-10'>
+        <footer className='flex flex-col max-w-[1500px] mx-auto gap-10 w-full p-6 h-auto justify-center mb-10'>
             <FadeGrid/>
             {/* <div className="images grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-3">
                 <div className='h-[230px] w-[230px] object-cover '>
@@ -60,15 +60,15 @@ const Footer = () => {
 
                 <div className="w-auto h-auto flex flex-col gap-1">
                         <p className="font-medium text-lg">
-                          <Link href="tel:+923323333333" className="flex items-center gap-3">
+                          <Link href="tel:+923158833638" className="flex items-center gap-3">
                             <FaPhone className="rotate-90" />
-                            +92 332 333333
+                            +92 315 8833638
                           </Link>
                         </p>
                         <p className="font-medium text-lg flex items-center gap-3">
-                          <Link href="mailto:khailasociates@gmail.com" className="flex items-center gap-3">
+                          <Link href="mailto:khailassociates@gmail.com" className="flex items-center gap-3">
                             <MdEmail />
-                            khailasociates@gmail.com
+                            khailassociates@gmail.com
                           </Link>
                         </p>
                         <div className="flex gap-4 mt-5 text-xl">
@@ -86,7 +86,7 @@ const Footer = () => {
 
                 <div className="w-auto h-auto flex flex-col gap-1">
                     <p className='text-sm'>Copyright © 2025. All Rights Reserved.</p>
-                    <p className='uppercase text-sm'>Khail Assoaciates</p>
+                    <p className='uppercase text-sm'>Khail Associates</p>
                 </div>
             </div>
         </footer>

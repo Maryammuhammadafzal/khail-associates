@@ -5,12 +5,13 @@ import { TestimonialCarousel } from './testimonial-carousel'
 
 const TestimonialSection = () => {
   return (
-    <section className="philosophy-section dark:bg-black relative px-8 w-full h-auto min-h-screen flex justify-center items-center">
+    <section className="philosophy-section dark:bg-black relative px-8 w-full h-auto  flex justify-center items-center">
 
+<div className='w-full h-auto flex  justify-center items-center max-w-[1500px] mx-auto'>
 
-            <div className="relative w-[35%] h-screen px-12 flex flex-col py-14 justify-center ">
+            <div className="relative w-[35%] px-12 flex flex-col py-14 justify-center ">
 
-                <div className="w-auto h-screen flex flex-col gap-12">
+                <div className="w-auto flex flex-col gap-12">
                     <div data-aos="fade-up" className="sub-heading flex gap-2 items-center">
                         <div className="w-1 h-1 dark:bg-white bg-neutral-800 rounded-full"></div>
                         <h4 className="text-base letter-spacing dark:text-white text-neutral-800 uppercase">
@@ -18,7 +19,7 @@ const TestimonialSection = () => {
                         </h4>
 
                     </div>
-                    <h1 data-aos="fade-up" className="dark:text-white text-neutral-800 font-medium text-5xl leading-14 max-w-4xl">
+                    <h1 data-aos="fade-up" className="dark:text-white text-neutral-800 font-medium text-4xl leading-14 max-w-4xl">
                         See Why Families Choose Khail Associates.
                     </h1>
                 </div>
@@ -27,6 +28,7 @@ const TestimonialSection = () => {
             <div className='relative w-[65%]  py-24 h-auto flex justify-center items-center'>
                 <TestimonialCarousel />
             </div>
+</div>
         </section>
   )
 }

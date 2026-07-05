@@ -6,19 +6,19 @@ import { ProjectCarousel } from './project-carousel'
 
 const ProjectSection = () => {
     return (
-        <section className="about-section bg-neutral-800 relative w-full h-auto min-h-screen flex flex-col justify-center ">
+        <section className="about-section bg-neutral-800  relative w-full h-auto flex flex-col justify-center items-center ">
            {/* grid line */}
-          <div className=" w-full min-h-screen h-full absolute top-0 left-0 flex pl-52 justify-between ">
-            <div className="column-1 border-l-[1px] border-white/30 w-[25%] min-h-screen h-full"></div>
-            <div className="column-1 border-l-[1px] border-white/30 w-[25%] min-h-screen h-full"></div>
-            <div className="column-1 border-l-[1px] border-white/30 w-[25%] min-h-screen h-full"></div>
-            <div className="column-1 border-l-[1px] border-white/30 w-[25%] min-h-screen h-full"></div>
+          <div className=" w-full max-w-[1500px] mx-auto h-full absolute top-0  flex pl-52 justify-between ">
+            <div className="column-1 border-l-[1px] border-white/30 w-[25%]  h-full"></div>
+            <div className="column-1 border-l-[1px] border-white/30 w-[25%]  h-full"></div>
+            <div className="column-1 border-l-[1px] border-white/30 w-[25%]  h-full"></div>
+            <div className="column-1 border-l-[1px] border-white/30 w-[25%]  h-full"></div>
           </div>
-            <div className="relative w-full min-h-screen h-auto flex p-8 my-24 flex-col justify-center gap-16">
+            <div className="relative w-full max-w-[1400px] mx-auto h-auto flex p-8 my-24 flex-col justify-center gap-16">
 
                 <div className="w-auto h-fit flex flex-col gap-12 justify-center ">
-                    <h2 data-aos="zoom-in-right" className="text-white font-medium text-9xl uppercase letter-spacing max-w-6xl">
-                        Recent Works
+                    <h2 data-aos="zoom-in-right" className="text-white font-medium text-4xl uppercase letter-spacing max-w-6xl">
+                        Our Team
                     </h2>
                 </div>
                 <div className='relative w-full h-auto flex justify-center items-center p-3 overflow-x-hidden'>

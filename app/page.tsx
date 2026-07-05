@@ -20,6 +20,8 @@ import Footer from "@/components/footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { MdEmail } from "react-icons/md";
 import { BsArrowUpRight } from "react-icons/bs";
+import { HeroCarousel } from "@/components/hero-carousel";
+import WorkSection from "@/components/work-section";
 
 export default function Home() {
   const [theme, setTheme] = useState(true);
@@ -47,7 +49,7 @@ export default function Home() {
   const projects_data = [
     {
       image: '/images/Project-image-1-min.jpeg',
-      title: 'Leading Architecture & Interior Design Firm in Karachi',
+      title: 'Leading Architecture & Interior Design Firm in Pakistan',
       nickname: 'Architecture'
     },
     {
@@ -83,11 +85,14 @@ export default function Home() {
   ]
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex min-h-screen items-center w-full justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white dark:bg-black sm:items-start">
 
         {/* Hero Section */}
-        <section className="hero-section relative w-full h-screen flex justify-center items-center">
+        <section className="hero-section relative  w-full h-[1000px] min-h-[800px]  flex justify-center items-center">
+        <div className="absolute z-0 w-full h-[1000px] ">
+          <HeroCarousel />
+        </div>
           {/* grid line */}
           {/* <div className="bg-black/10 w-full h-screen flex pl-52 justify-between ">
             <div className="column-1 border-l-[1px] border-white/30 w-[25%] h-screen"></div>
@@ -95,29 +100,29 @@ export default function Home() {
             <div className="column-1 border-l-[1px] border-white/30 w-[25%] h-screen"></div>
             <div className="column-1 border-l-[1px] border-white/30 w-[25%] h-screen"></div>
           </div> */}
-
+          {/* Hero Carousel */}
           {/* header */}
-          <div className="w-full bg-black/10 absolute top-0 left-0 h-auto flex justify-between ">
-            <div className="menu w-auto  py-0 pl-8 pr-8 border-r border-white/30">
-              <Image src="/images/logo.png" alt="logo" width={100} height={100} className="w-auto h-auto" />
+          <div className="w-full max-w-[1500px] mx-auto z-50 absolute top-0 max-h-[800px]  h-auto flex justify-between ">
+            <div className="menu w-auto  py-0   ">
+              <Image src="/images/logo.png" alt="logo" width={200} height={200} className="w-200px h-200px" />
             </div>
 
 
-            <div className="logo w-auto h- px-20 text-center h-screen border-l py-8 border-r border-white/30 flex justify-center ">
-              <h2 data-aos="fade-down" className="text-white  text-center font-bold text-4xl uppercase">Khail Associates</h2>
+            <div className="logo w-auto h- px-20 text-center h-screen max-h-[800px] pt-8 pb-2  flex justify-center ">
+              <h2 data-aos="fade-down" className="text-white  text-center font-bold text-3xl uppercase">Khail Associates</h2>
             </div>
 
-            <div className="w-auto h-auto border-l border-white/50  py-8 pr-8 ">
+            <div className="w-auto h-auto  py-8 pr-8 ">
               <div data-aos="fade-left" onClick={() => toggleTheme()} className="theme items-center pl-20 w-auto h-auto  flex gap-6">
-                {theme === true ? (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><MoonIcon size={20} /> Dark Mode</span>) : (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><SunDimIcon size={20} /> Light Mode</span>)}
+                {theme === true ? (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><MoonIcon size={20} /> </span>) : (<span className="text-sm font-semibold cursor-pointer uppercase text-white flex gap-2"><SunDimIcon size={20} /></span>)}
                 <div className="menu-icon text-white ">
-                  <TbMenu3 size={34} onClick={() => setOpenMenu(true)} />
+                  <TbMenu3 size={28} onClick={() => setOpenMenu(true)} />
                 </div>
               </div>
             </div>
           </div>
 
-          <nav className="menu w-full absolute top-20 left-0  py-8 pl-8 ">
+          <nav className="menu w-full max-w-[1500px] absolute top-14 mx-auto  z-50 py-8 pl-8 ">
             <ul className="menu-item letter-spacing pr-24 w-auto h-auto gap-24 flex justify-center  text-white">
               <li className="relative group">
                 <Link
@@ -378,9 +383,9 @@ export default function Home() {
                           </Link>
                         </p>
                         <p className="font-medium text-lg flex items-center gap-3">
-                          <Link href="mailto:khailasociates@gmail.com" className="flex items-center gap-3">
+                          <Link href="mailto:khailassociates@gmail.com" className="flex items-center gap-3">
                             <MdEmail />
-                            khailasociates@gmail.com
+                            khailassociates@gmail.com
                           </Link>
                         </p>
                         <div className="flex gap-4 mt-5 text-xl">
@@ -418,26 +423,41 @@ export default function Home() {
               </button>
             </div>
 
-            <div className="flex gap-6 w-auto h-auto justify-between">
+            <div className="flex gap-6 w-auto h-screen  justify-between">
               <div className="w-auto h-auto">
                 {/* Menu Items */}
                 <ul className="px-18 py-2 space-y-12">
-                  <li className="text-[40px] uppercase font-semibold">Home</li>
-                  <li className="text-[40px] uppercase font-semibold">About Us</li>
-                  <li className="text-[40px] uppercase font-semibold">Our Services</li>
-                  <li className="text-[40px] uppercase font-semibold">Projects</li>
-                  <li className="text-[40px] uppercase font-semibold">Contact Us</li>
+                  <Link
+                    href="/">
+                    <li className="text-[40px] uppercase font-semibold">Home</li>
+                  </Link>
+                  <Link
+                    href="/about">
+                    <li className="text-[40px] uppercase font-semibold">About Us</li>
+                  </Link>
+                  <Link
+                    href="/services">
+                    <li className="text-[40px] uppercase font-semibold">Our Services</li>
+                  </Link>
+                  <Link
+                    href="/projects">
+                    <li className="text-[40px] uppercase font-semibold">Projects</li>
+                  </Link>
+                  <Link
+                    href="/contact">
+                    <li className="text-[40px] uppercase font-semibold">Contact Us</li>
+                  </Link>
                 </ul>
               </div>
 
-              <div className="w-auto h-auto flex flex-col gap-1 items-end justify-end pr-14">
-                <p className="font-medium text-lg">
+              <div className="w-auto h-auto flex flex-col gap-1 items-end justify-end pb-40 pr-14">
+                <p className="font-medium text-xl">
                   +92 332 333333
                 </p>
-                <p className="font-medium text-lg">
-                  khailasociates@gmail.com
+                <p className="font-medium text-xl">
+                  khailassociates@gmail.com
                 </p>
-                <div className="flex gap-4 py-4 text-xl">
+                <div className="flex gap-4 py-4 text-2xl">
                   <FaFacebookF />
                   <FaInstagram />
                   <FaLinkedin />
@@ -447,25 +467,26 @@ export default function Home() {
           </div>
 
           {/* hero content */}
-          <div className="hero-content absolute top-70   w-auto min-w-[50%] min-h-[50%] h-fit flex justify-center items-center">
-            <div className="w-auto h-auto flex flex-col gap-4 justify-center text-center">
-              <div data-aos="fade-right" className="sub-heading flex gap-2 items-center justify-center">
+          <div className="hero-content absolute bottom-50 left-20 max-w-[1500px]  z-40 w-auto min-w-[50%]  h-fit flex items-center items-end">
+            <div className="w-auto h-auto flex flex-col gap-4">
+              <div data-aos="fade-right" className="sub-heading flex gap-2 items-center">
                 <div className="w-1 h-1 bg-white rounded-full"></div>
                 <h4 className="text-base letter-spacing text-white uppercase">
                   Pakistan's Trusted Architecture
                 </h4>
               </div>
-              <h1 data-aos="fade-right" className="text-white font-medium text-7xl max-w-2xl m-auto">
-                Karachi's Premier Architecture & Interior Design Firm
+              <h1 data-aos="fade-right" className="text-white font-medium text-left text-4xl max-w-2xl ">
+                Pakistan's Premier Architecture & Interior Design Firm
               </h1>
-              <p data-aos="fade-right" className="text-white text-xl max-w-xl m-auto">Transform your dream home or commercial space into reality with Pakistan's most trusted architectural designers</p>
-              <Button data-aos="fade-right" className="bg-neutral-800 m-auto text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>
+              {/* <p data-aos="fade-right" className="text-white text-xl max-w-xl m-auto">Transform your dream home or commercial space into reality with Pakistan's most trusted architectural designers</p> */}
+              <Button onClick={() => {}} data-aos="fade-right" className="bg-white  text-neutral-800 w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-white hover:bg-neutral-800 transition delay-150 duration-300 ease-in-out ">Contact Us <ArrowUpRight size={16} /></Button>
             </div>
           </div>
 
         </section>
 
         <AboutSection />
+        <WorkSection />
         <FeaturesSection />
         <ProjectSection />
         <ProcessSection subheading="Our Process" heading="Great Design Starts with Understanding People, Not Just Buildings" paragraph="The main areas of work are architectural design, interior design, project completion, industrial design, ceramic production of decorative items and furniture. Our highly collaborative, award-winning team will help you achieve your goals for a distinctive design, inspired by what you find most important and beautiful." image="/images/process-bg.webp" />
