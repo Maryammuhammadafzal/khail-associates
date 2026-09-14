@@ -11,13 +11,13 @@ export default function ImageComparison() {
       <ReactCompareSlider className=''
         itemOne={
           <ReactCompareSliderImage
-            src="/images/comparison-before.webp"
+            src="/images/front page/TYPICAL F.jpg.jpeg"
             alt="Under Construction"
           />
         }
         itemTwo={
           <ReactCompareSliderImage
-            src="/images/comparison-after.webp"
+            src="/images/front page/Umair Gulistan-1.jpeg"
             alt="Completed Building"      
           />
         }

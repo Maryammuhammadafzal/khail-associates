@@ -5,27 +5,27 @@ import { TestimonialCarousel } from './testimonial-carousel'
 
 const TestimonialSection = () => {
   return (
-    <section className="philosophy-section dark:bg-black relative px-8 w-full h-auto  flex justify-center items-center">
+    <section className="philosophy-section dark:bg-black relative px-4 py-12 sm:px-6 lg:px-8 w-full h-auto flex justify-center items-center">
 
-<div className='w-full h-auto flex  justify-center items-center max-w-[1500px] mx-auto'>
+<div className='w-full h-auto flex flex-col justify-center items-center max-w-[1500px] mx-auto gap-8 lg:flex-row'>
 
-            <div className="relative w-[35%] px-12 flex flex-col py-14 justify-center ">
+            <div className="relative w-full px-0 lg:w-[35%] lg:px-12 flex flex-col py-0 lg:py-14 justify-center ">
 
-                <div className="w-auto flex flex-col gap-12">
+                <div className="w-auto flex flex-col gap-8 lg:gap-12">
                     <div data-aos="fade-up" className="sub-heading flex gap-2 items-center">
                         <div className="w-1 h-1 dark:bg-white bg-neutral-800 rounded-full"></div>
-                        <h4 className="text-base letter-spacing dark:text-white text-neutral-800 uppercase">
+                        <h4 className="text-sm sm:text-base letter-spacing dark:text-white text-neutral-800 uppercase">
                            Client Testimonial
                         </h4>
 
                     </div>
-                    <h1 data-aos="fade-up" className="dark:text-white text-neutral-800 font-medium text-4xl leading-14 max-w-4xl">
+                    <h1 data-aos="fade-up" className="dark:text-white text-neutral-800 font-medium text-3xl sm:text-4xl leading-tight lg:text-4xl lg:leading-14 max-w-4xl">
                         See Why Families Choose Khail Associates.
                     </h1>
                 </div>
                 {/* <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-700 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More<ArrowUpRight size={16} /></Button> */}
             </div>
-            <div className='relative w-[65%]  py-24 h-auto flex justify-center items-center'>
+            <div className='relative w-full lg:w-[65%] py-0 lg:py-24 h-auto flex justify-center items-center'>
                 <TestimonialCarousel />
             </div>
 </div>

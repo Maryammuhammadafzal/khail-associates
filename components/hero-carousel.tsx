@@ -107,7 +107,7 @@ export function HeroCarousel() {
   width={100}
   height={1480}
   priority={index === 0}
-  className="w-full h-[1000px] object-cover object-top"
+  className="w-full h-[1000px] max-sm:h-[500px] object-cover object-top"
 />
 </div>
 

@@ -24,39 +24,39 @@ export function ProjectCarousel() {
     )
     const projects_data = [
         {
-            image: '/images/Project-image-1-min.jpeg',
-            title: 'Architect By Yousuf',
-            nickname: 'Architecture'
+            image: '/images/Team/team-image-1.jpeg',
+            title: 'Muhammad Anwar ul Haque',
+            nickname: 'Engineer'
         },
         {
-            image: '/images/Project-image-2-min.jpeg',
-            title: 'Architect By Yousuf',
-            nickname: 'Architecture'
+            image: '/images/Team/team-image-2.jpeg',
+            title: 'Quanit khursheed siddiqui',
+            nickname: 'Architect'
         },
         {
-            image: '/images/Project-image-3-min.jpeg',
-            title: 'Architect By Yousuf',
-            nickname: 'Architecture'
+            image: '/images/Team/team-image-3.jpeg',
+            title: 'Zoheb Hussain',
+            nickname: 'Architect'
         },
         {
-            image: '/images/Project-image-4-min.jpeg',
-            title: 'Architect By Yousuf',
-            nickname: 'Architecture'
+            image: '/images/Team/team-image-4.jpeg',
+            title: 'Ismail khan',
+            nickname: 'Project Manager'
         },
         {
-            image: '/images/Project-image-5-min.jpeg',
-            title: 'Architect By Yousuf',
-            nickname: 'Architecture'
+            image: '/images/Team/team-image-5.jpeg',
+            title: 'Waris Khan',
+            nickname: 'Site supervisor'
         },
         {
-            image: '/images/Project-image-6-min.jpeg',
-            title: 'Architect By Yousuf',
-            nickname: 'Architecture'
+            image: '/images/Team/team-image-6.jpeg',
+            title: 'Asad Siddiqui',
+            nickname: 'Senior Draftsman'
         },
         {
-            image: '/images/Project-image-7-min.jpeg',
-            title: 'Architect By Yousuf',
-            nickname: 'Architecture'
+            image: '/images/Team/team-image-7.jpeg',
+            title: 'Basit Khan',
+            nickname: 'Senior Draftsman'
         },
     ]
 
@@ -72,15 +72,15 @@ export function ProjectCarousel() {
         >
             <CarouselContent>
                 {projects_data.map((project, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                        <div className="p-1">
-                            <Card className="p-3 border-none shadow-none bg-transparent">
+                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4 p-0 m-0">
+                        <div className="">
+                            <Card className="p-1 border-none shadow-none bg-transparent">
                                 <CardContent className="flex flex-col gap-6 p-2">
                                     <div className="w-full h-[500px]">
-                                        <Image src={project.image} alt="image" width={400} height={500} className="w-full h-full object-cover object-center" />
+                                        <Image src={project.image} alt="image" width={400} height={500} className="w-full grayscale-75 hover:grayscale-0 h-full object-cover object-center" />
                                     </div>
                                     <div className="flex flex-col gap-2 text-white">
-                                        <h2 className="text-2xl font-medium">{project.title}</h2>
+                                        <h2 className="text-[20px] font-medium">{project.title}</h2>
                                         <p className="font-semibold">{project.nickname}</p>
                                     </div>
                                 </CardContent>

@@ -35,13 +35,13 @@ export function TestimonialCarousel() {
   <CarouselContent>
     {Array.from({ length: 5 }).map((_, index) => (
       <CarouselItem key={index}>
-        <div className="p-6 border-l dark:border-neutral-300/30 border-neutral-400/50">
+        <div className="p-3 sm:p-4 lg:p-6 border-l dark:border-neutral-300/30 border-neutral-400/50">
           <Card className="border-none shadow-none bg-transparent">
-            <CardContent className="flex flex-col gap-12">
+            <CardContent className="flex flex-col gap-6 sm:gap-8 lg:gap-12 p-0">
 
-              <Quote size={60} className="text-[#D4AF37] rotate-180" />
+              <Quote size={40} className="text-[#D4AF37] rotate-180 sm:size-[50px] lg:size-[60px]" />
 
-              <p className="text-3xl leading-relaxed">
+              <p className="text-xl leading-relaxed sm:text-2xl lg:text-3xl">
                 “Khail Associates transformed our vision into a refined architectural
                 statement. Their attention to detail and spatial intelligence elevated
                 the entire project beyond expectations.”
@@ -53,14 +53,14 @@ export function TestimonialCarousel() {
                   alt="Client portrait"
                   width={60}
                   height={60}
-                  className="rounded-full object-cover"
+                  className="rounded-full object-cover h-12 w-12 sm:h-[60px] sm:w-[60px]"
                 />
 
                 <div>
-                  <h4 className="text-lg uppercase tracking-wide">
+                  <h4 className="text-base uppercase tracking-wide sm:text-lg">
                     Sarah Mitchell
                   </h4>
-                  <p className="text-neutral-500 text-sm">
+                  <p className="text-neutral-500 text-xs sm:text-sm">
                     Interior Consultant
                   </p>
                 </div>
@@ -74,9 +74,9 @@ export function TestimonialCarousel() {
   </CarouselContent>
 
   {/* Global Controls */}
-  <div className="absolute bottom-6 right-6 flex w-[80px] gap-6">
-    <CarouselPrevious className="" />
-    <CarouselNext />
+  <div className="absolute bottom-3 right-3 flex w-[72px] gap-2 sm:bottom-6 sm:right-6 sm:gap-6">
+    <CarouselPrevious className="h-9 w-9 sm:h-10 sm:w-10" />
+    <CarouselNext className="h-9 w-9 sm:h-10 sm:w-10" />
   </div>
 </Carousel>
     )

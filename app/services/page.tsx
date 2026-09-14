@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import TestimonialSection from "@/components/testimonial-section";
+// import TestimonialSection from "@/components/testimonial-section";
 import Footer from "@/components/footer";
 import HeroSection from "@/components/hero-section";
 import Service from "@/components/service";
@@ -21,8 +21,8 @@ export default function AnoutPage() {
     const features_data = [
         {
             index: 0,
-            id: "designing-spaces",
-            image: '/images/image-1.jpeg',
+            id: "architecture",
+            image: '/images/community-park.jpg',
             icon: '/images/feature-icon-1.png',
             title: 'Designing Spaces That Inspire',
             description: "We create thoughtful architectural solutions that blend creativity, functionality, and sustainability. Whether it's a dream home, commercial development, or renovation project, our designs are tailored to reflect your vision while maximizing comfort and value.",
@@ -30,8 +30,8 @@ export default function AnoutPage() {
         },
         {
             index: 1,
-            image: '/images/image-2.jpeg',
-            id: "interior-design",
+            image: '/images/interior-project.jpeg',
+            id: "interior",
             icon: '/images/feature-icon-2.png',
             title: 'Interiors Crafted for Modern Living',
             description: 'From luxurious residences to contemporary workplaces, we create refined interiors that elevate everyday experiences through thoughtful design and attention to detail.',
@@ -39,8 +39,8 @@ export default function AnoutPage() {
         },
         {
             index: 2,
-            image: '/images/image-3.jpeg',
-            id: "vision-to-reality",
+            image: '/images/residential-projects/residential-project-16.jpg',
+            id: "building",
             icon: '/images/feature-icon-3.png',
             title: 'From Vision to Reality',
             description: 'Our end-to-end project delivery service ensures a smooth and hassle-free experience. From planning and approvals to construction supervision and final execution, we handle every detail so you can focus on the bigger picture.',
@@ -74,20 +74,20 @@ export default function AnoutPage() {
     // ];
 
     return (
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-            <main className="flex min-h-screen w-full flex-col items-center justify-between bg-white dark:bg-black sm:items-start">
+        <div className="flex min-h-screen w-full items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+            <main className="flex min-h-screen w-full flex-col items-center justify-center bg-white dark:bg-black ">
 
                 {/* Hero Section */}
                 <HeroSection subheading="Our Services" heading="Architectural & Interior Design Services in Karachi, Pakistan" paragraph="Khail Associates offers comprehensive architectural and interior design services tailored for Pakistani clients. Whether you're a homeowner planning to build in Karachi's residential areas, a business owner looking to establish a commercial space, or a developer managing large-scale projects, we provide end-to-end solutions that combine aesthetic excellence with practical functionality." image="/images/image-3.jpeg" />
                 {/* Services Section */}
-                <div className="flex flex-col px-8 py-24 gap-10">
+                <div className="flex flex-col px-8 justify-center py-24 gap-16">
 
                     {features_data.map((feature) => (
-                        <Service key={feature.title} index={feature.index} icon={feature.icon} subheading={feature.title} heading={feature.title} paragraph={feature.description} image={feature.image} />
+                        <Service id={feature.id} key={feature.title} index={feature.index} icon={feature.icon} subheading={feature.title} heading={feature.title} paragraph={feature.description} image={feature.image} />
                     ))}
                 </div>
                 {/* Testimonial Section */}
-                <TestimonialSection />
+                {/* <TestimonialSection /> */}
                 <Footer />
             </main>
         </div>

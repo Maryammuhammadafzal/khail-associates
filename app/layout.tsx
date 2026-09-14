@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Josefin_Sans, Poppins } from "next/font/google";
-import "./globals.css";
+import { Poppins, Inter } from "next/font/google";
+import "./globals.css"
 
-const dmSans = Josefin_Sans({
-  variable: "--font-josefin-sans",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" ,"900"]
 });
 
-const geistMono = Poppins({
-  variable: "--font-poppins",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
   weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" ,"900"]
 });
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dmSans.variable} ${geistMono.variable} antialiased w-full flex justify-center mx-auto h-auto bg-white dark:bg-black overflow-x-hidden`}
+        className={`${poppins.variable} ${inter.variable} antialiased w-full flex justify-center mx-auto h-auto bg-white dark:bg-black overflow-x-hidden`}
       >
         {children}
       </body>
