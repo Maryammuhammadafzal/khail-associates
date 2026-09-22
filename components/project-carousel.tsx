@@ -77,11 +77,11 @@ export function ProjectCarousel() {
         >
             <CarouselContent>
                 {projects_data.map((project, index) => (
-                    <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5 sm:p-0 px-6 m-0">
+                    <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4 sm:p-0 px-6 m-0">
                         <div className="">
-                            <Card className="sm:p-1 p-14 border-none shadow-none bg-transparent">
+                            <Card className="sm:p-1 p-6 border-none shadow-none bg-transparent">
                                 <CardContent className="flex flex-col gap-6 p-2">
-                                    <div className="w-full h-[500px]">
+                                    <div className="w-full h-[400px]">
                                         <Image src={project.image} alt="image" width={400} height={500} className="w-full grayscale-75 hover:grayscale-0 h-full object-cover object-center" />
                                     </div>
                                     <div className="flex flex-col gap-2 text-white">

@@ -16,7 +16,7 @@ const ProjectSection = () => {
           </div>
             <div className="relative w-full max-w-[1400px] mx-auto h-auto flex lg:p-8 p-3 my-24 flex-col justify-center gap-16">
 
-                <div className="w-auto h-fit flex flex-col gap-12 justify-center ">
+                <div className="w-auto h-fit flex flex-col max-sm:p-6 gap-12 justify-center ">
                     <h2 data-aos="zoom-in-right" className="text-white font-medium text-4xl uppercase letter-spacing max-w-6xl">
                         Our Team
                     </h2>
