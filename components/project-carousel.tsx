@@ -24,6 +24,11 @@ export function ProjectCarousel() {
     )
     const projects_data = [
         {
+            image: '/images/Team/ceo-image.jpeg',
+            title: 'Architect Yousuf',
+            nickname: 'Architect CEO Khail Associates'
+        },
+        {
             image: '/images/Team/team-image-1.jpeg',
             title: 'Muhammad Anwar ul Haque',
             nickname: 'Engineer'
@@ -72,9 +77,9 @@ export function ProjectCarousel() {
         >
             <CarouselContent>
                 {projects_data.map((project, index) => (
-                    <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/4 p-0 m-0">
+                    <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/5 sm:p-0 px-6 m-0">
                         <div className="">
-                            <Card className="p-1 border-none shadow-none bg-transparent">
+                            <Card className="sm:p-1 p-14 border-none shadow-none bg-transparent">
                                 <CardContent className="flex flex-col gap-6 p-2">
                                     <div className="w-full h-[500px]">
                                         <Image src={project.image} alt="image" width={400} height={500} className="w-full grayscale-75 hover:grayscale-0 h-full object-cover object-center" />
