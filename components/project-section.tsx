@@ -1,31 +1,104 @@
-import Image from 'next/image'
-import React from 'react'
-import { Button } from './ui/button'
-import { ArrowUpRight } from 'lucide-react'
-import { ProjectCarousel } from './project-carousel'
+import React from "react"
+import { ProjectCarousel } from "./project-carousel"
 
 const ProjectSection = () => {
     return (
-        <section className="about-section bg-neutral-800  relative w-full h-auto flex flex-col justify-center items-center ">
-           {/* grid line */}
-          <div className=" w-full max-w-[1500px] mx-auto h-full absolute top-0  flex pl-52 justify-between ">
-            <div className="column-1 border-l-[1px] border-white/30 w-[25%]  h-full"></div>
-            <div className="column-1 border-l-[1px] border-white/30 w-[25%]  h-full"></div>
-            <div className="column-1 border-l-[1px] border-white/30 w-[25%]  h-full"></div>
-            <div className="column-1 border-l-[1px] border-white/30 w-[25%]  h-full"></div>
-          </div>
-            <div className="relative w-full max-w-[1400px] mx-auto h-auto flex lg:p-8 p-3 my-24 flex-col justify-center gap-16">
+        <section className="
+            relative
+            w-full
+            bg-neutral-800
+            overflow-hidden
+        ">
 
-                <div className="w-auto h-fit flex flex-col max-sm:p-6 gap-12 justify-center ">
-                    <h2 data-aos="zoom-in-right" className="text-white font-medium text-4xl uppercase letter-spacing max-w-6xl">
+            {/* Architectural grid lines */}
+            <div className="
+                pointer-events-none
+                absolute inset-0
+                w-full
+                max-w-[1500px]
+                mx-auto
+                flex
+                justify-between
+                px-6 sm:px-12 lg:px-32
+            ">
+                <div className="h-full w-px bg-white/10" />
+                <div className="h-full w-px bg-white/10" />
+                <div className="h-full w-px bg-white/10" />
+                <div className="h-full w-px bg-white/10" />
+            </div>
+
+
+            <div className="
+                relative
+                z-10
+                w-full
+                max-w-[1400px]
+                mx-auto
+                px-4
+                sm:px-8
+                lg:px-10
+                py-20
+                sm:py-24
+                lg:py-32
+            ">
+
+                {/* Section Heading */}
+                <div className="
+                    mb-12
+                    sm:mb-16
+                    lg:mb-20
+                    flex
+                    flex-col
+                    gap-5
+                ">
+
+                    {/* <div className="flex items-center gap-3">
+                        <span className="
+                            h-1.5
+                            w-1.5
+                            rounded-full
+                            bg-white"
+                        />
+
+                        <span className="text-white/60text-xs uppercase tracking-[0.3em]">
+                            Our People
+                        </span>
+                    </div> */}
+
+                    <h2
+                        data-aos="zoom-in-right"
+                        className="
+                            text-white
+                            text-4xl
+                            sm:text-5xl
+                            lg:text-6xl
+                            font-medium
+                            uppercase
+                            tracking-tight
+                        "
+                    >
                         Our Team
                     </h2>
+
+                    <p className="
+                        max-w-2xl
+                        text-white/60
+                        text-sm
+                        sm:text-base
+                        leading-relaxed
+                    ">
+                        Meet the architects, engineers, designers and
+                        professionals behind Khail Associates.
+                    </p>
+
                 </div>
-                <div className='relative w-full h-auto flex justify-center items-center lg:p-3 overflow-x-hidden'>
-                  <ProjectCarousel />
-                </div>
-                {/* <Button data-aos="fade-up" className="bg-neutral-800 text-white w-44 px-10 text-base py-6 rounded-none mt-3 font-semibold flex gap-3 hover:text-neutral-800 hover:bg-white transition delay-150 duration-300 ease-in-out ">Discover More <ArrowUpRight size={16} /></Button> */}
+
+
+                {/* Team Gallery */}
+                <ProjectCarousel />
+
             </div>
+
         </section>
     )
 }
